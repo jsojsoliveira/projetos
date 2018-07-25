@@ -1,6 +1,6 @@
 package exemplo1;
 
-public class Pessoa {
+abstract class Pessoa {
 
 	private String nome;
 	private int idade;
@@ -9,7 +9,7 @@ public class Pessoa {
 			
 	public Pessoa(String nome, int idade, float altura, float peso) {
 		//super();
-		this.setNome(nome) = nome;
+		this.setNome(nome);
 		this.idade = idade;
 		this.altura = altura;
 		this.peso = peso;
@@ -17,7 +17,7 @@ public class Pessoa {
 	
 		public Pessoa(String nome) {
 		//super();
-		this.setNome(nome) = nome;
+		this.setNome(nome);
 	}		
 
 		public Pessoa() {
@@ -36,10 +36,8 @@ public class Pessoa {
 		return idade;
 	}
 	
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	
+	public abstract void setIdade(int idade); 
+			
 	public float getAltura() {
 		return altura;
 	}
